@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+#tabula-header #tabula-my-nav {
+  justify-content: space-between;
+}
+
+.tabula-header {
+  font-size: 0.9em;
+  max-width: 1234px;
+  margin-top: -15px;
+}
+.tabula-header .tabula-nav-link {
+  color: #181818;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.tabula-header .tabula-nav-link:hover {
+  color: #b61984;
+}
+.tabula-header .tabula__nav__center {
+  margin-right: 2em;
+}
+.tabula-header .tabula__nav__center .navbar-nav .nav-item {
+  margin: 0 1em;
+  position: relative;
+}
+.tabula-header .tabula__nav__center .navbar-nav .nav-item .nav-link {
+  position: relative;
+}
+.tabula-header .tabula__nav__center .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  background-color: #b61984;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.tabula-header .tabula__nav__center .navbar-nav .nav-item .nav-link:hover::after {
+  opacity: 1;
+}
+.tabula-header .tabula__nav__center .navbar-nav .active .nav-link::after {
+  opacity: 1;
+}
+.tabula-header .tabula__nav__right button {
+  color: #fff;
+  background: #b61984;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+.tabula-header .tabula__nav__right button:hover {
+  background: #fff;
+  border-color: #b61984;
+  color: #b61984;
+}
+.tabula-header .tabula__nav__right li a {
+  margin-right: 1em;
+}
+.tabula-header .tabula__nav__right .navbar-nav {
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,18 @@
+@mixin textStyle($color, $fs, $pw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin btnStyle($bg, $border, $border-radius, $py, $px) {
+    background: $bg;
+    border: $border;
+    border-radius: $border-radius;
+    padding: $py $px;
+}
+
+@mixin btnHover($bg-hover, $bd-hover, $color-hover) {
+    background: $bg-hover;
+    border-color: $bd-hover;
+    color: $color-hover;
+}

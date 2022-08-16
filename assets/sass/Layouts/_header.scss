@@ -1,0 +1,73 @@
+.tabula-header {
+    font-size: $fs-3;
+    max-width: 1234px;
+    margin-top: $mg-7;
+
+    .tabula-nav-link {
+        color: $color-dark-gray;
+        font-weight: $fw-3;
+        transition: all 0.5s;
+        &:hover {
+            color: $color-strong-pink;
+        }
+    }
+
+    .tabula__nav__center {
+        margin-right: $mg-3;
+        .navbar-nav {
+            .nav-item {
+                margin: 0 $mg-2;
+                position: relative;
+                .nav-link {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -30px;
+                        left: 20px;
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: $bd-radius-1;
+                        background-color: $color-strong-pink;
+                        transition: all 0.5s;
+                        opacity: 0;
+                    }
+                }
+                .nav-link {
+                    &:hover {
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .active {
+                .nav-link {
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .tabula__nav__right {
+        button {
+            color: $color-white;
+            @include btnStyle($color-strong-pink, $bd-1 solid, $bd-radius-1, $pd-7, $pd-4);
+            transition: all 0.5s;
+            &:hover {
+                @include btnHover($color-white, $color-strong-pink, $color-strong-pink);
+            }
+        }
+        li {
+            a {
+                margin-right: $mg-2;
+            }
+        }
+        .navbar-nav {
+            align-items: center;
+        }
+    }
+}
