@@ -1,0 +1,21 @@
+.about-us__content {
+    max-width: 1234px;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            display: block;
+        }
+        .about-us__left {
+            .left__top {
+                margin-bottom: $mg-8;
+                @include textStyle($color-strong-pink, $fs-5, $fw-4);
+            }
+            .left__bottom {
+                line-height: $lh-1;
+                @include textStyle($color-dark-gray, $fs-9, $fw-3);
+            }
+        }
+    }
+}

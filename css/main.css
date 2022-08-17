@@ -87,4 +87,28 @@ img {
 }
 .tabula-header .tabula__nav__right .navbar-nav {
   align-items: center;
+}
+
+.about-us__content {
+  max-width: 1234px;
+}
+.about-us__content .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us__content .row span {
+  display: block;
+}
+.about-us__content .row .about-us__left .left__top {
+  margin-bottom: 10px;
+  color: #b61984;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.about-us__content .row .about-us__left .left__bottom {
+  line-height: 4.5rem;
+  color: #181818;
+  font-size: 3.8rem;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
