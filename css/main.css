@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -20,7 +19,6 @@ ul {
 a {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
@@ -44,35 +42,28 @@ img {
   width: 100%;
   z-index: 1;
 }
-
 .tabula-header .header__content {
   font-size: 0.9em;
   max-width: 1280px;
 }
-
 .tabula-header .header__content .tabula-nav-link {
   color: #181818;
   font-weight: 700;
   transition: all 0.5s;
 }
-
 .tabula-header .header__content .tabula-nav-link:hover {
   color: #b61984;
 }
-
 .tabula-header .header__content .tabula__nav__center {
   margin-right: 2em;
 }
-
 .tabula-header .header__content .tabula__nav__center .navbar-nav .nav-item {
   margin: 0 1em;
   position: relative;
 }
-
 .tabula-header .header__content .tabula__nav__center .navbar-nav .nav-item .nav-link {
   position: relative;
 }
-
 .tabula-header .header__content .tabula__nav__center .navbar-nav .nav-item .nav-link::after {
   content: "";
   position: absolute;
@@ -86,15 +77,12 @@ img {
   transition: all 0.5s;
   opacity: 0;
 }
-
 .tabula-header .header__content .tabula__nav__center .navbar-nav .nav-item .nav-link:hover::after {
   opacity: 1;
 }
-
 .tabula-header .header__content .tabula__nav__center .navbar-nav .active .nav-link::after {
   opacity: 1;
 }
-
 .tabula-header .header__content .tabula__nav__right button {
   color: #fff;
   background: #b61984;
@@ -103,17 +91,14 @@ img {
   padding: 10px 20px;
   transition: all 0.5s;
 }
-
 .tabula-header .header__content .tabula__nav__right button:hover {
   background: #fff;
   border-color: #b61984;
   color: #b61984;
 }
-
 .tabula-header .header__content .tabula__nav__right li a {
   margin-right: 1em;
 }
-
 .tabula-header .header__content .tabula__nav__right .navbar-nav {
   align-items: center;
 }
@@ -130,7 +115,6 @@ img {
     background-color: #fff;
     text-align: center;
   }
-
   #tabula-header .header__content .material-symbols-outlined {
     background-color: #b61984;
     display: block;
@@ -138,27 +122,23 @@ img {
     border-radius: 10px;
   }
 }
-
 @media screen and (max-width: 1199px) {
   #tabula-header .header__content {
     background-color: #fff;
     text-align: center;
   }
-
   #tabula-header .header__content .material-symbols-outlined {
     background-color: #b61984;
     display: block;
     padding: 13px;
     border-radius: 10px;
   }
-
   #tabula-header .header__content .nav-link::after {
     bottom: 5px;
     width: 100%;
     height: 0.5px;
   }
 }
-
 .tabula-about-us {
   position: relative;
   background: url("../assets/img/Violet_top_left_wave.png");
@@ -166,7 +146,6 @@ img {
   background-size: contain;
   background-position: bottom center;
 }
-
 .tabula-about-us::before {
   content: "";
   top: 0;
@@ -177,31 +156,26 @@ img {
   width: 100%;
   height: 220px;
 }
-
 .tabula-about-us .about-us__content {
   max-width: 1234px;
   margin-top: -150px;
   padding: 0 30px;
   padding-bottom: 50px;
 }
-
 .tabula-about-us .about-us__content .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .tabula-about-us .about-us__content .row span {
   display: block;
 }
-
 .tabula-about-us .about-us__content .row .about-us__left .left__top {
   margin-bottom: 10px;
   color: #b61984;
   font-size: 1.1rem;
   font-weight: 500;
 }
-
 .tabula-about-us .about-us__content .row .about-us__left .left__bottom {
   line-height: 4.5rem;
   color: #181818;
@@ -213,69 +187,56 @@ img {
   .tabula-about-us::before {
     height: 180px;
   }
-
   .tabula-about-us .about-us__content .row {
     margin-top: 80px;
   }
-
   .tabula-about-us .about-us__content .row .about-us__left .left__top {
     margin-bottom: 8px;
   }
-
   .tabula-about-us .about-us__content .row .about-us__left .left__bottom {
     line-height: 3.5rem;
     color: #181818;
     font-size: 2.8rem;
     font-weight: 700;
   }
-
   .tabula-about-us .about-us__content .row .about-us__right {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 992px) {
   .tabula-about-us::before {
     height: 180px;
   }
-
   .tabula-about-us .about-us__content .row .about-us__left {
     margin-top: 80px;
   }
-
   .tabula-about-us .about-us__content .row .about-us__left .left__top {
     margin-bottom: -15px;
   }
-
   .tabula-about-us .about-us__content .row .about-us__left .left__bottom {
     color: #181818;
     font-size: 2.5rem;
     font-weight: 700;
   }
-
   .tabula-about-us .about-us__content .row .about-us__right {
     width: 600px;
   }
 }
-
 @media screen and (max-width: 913px) {
   .tabula-about-us .about-us__content .row .about-us__left .left__bottom {
     margin-top: 25px;
     font-size: 3.15rem;
   }
-
   .tabula-about-us .about-us__content .row .about-us__right {
     margin-top: 40px;
   }
 }
-
 @media screen and (max-width: 881px) {
   .tabula-about-us .about-us__content .row .about-us__left .left__bottom {
     margin-top: 25px;
     font-size: 3.5rem;
   }
 }
-
 @media screen and (max-width: 817px) {
   .tabula-about-us .about-us__content .row .about-us__left .left__bottom {
     color: #181818;
@@ -283,33 +244,27 @@ img {
     font-weight: 700;
   }
 }
-
 @media screen and (max-width: 768px) {
   .tabula-about-us::before {
     height: 180px;
   }
-
   .tabula-about-us .about-us__content .row .about-us__left {
     margin-top: 80px;
     margin-bottom: 40px;
   }
-
   .tabula-about-us .about-us__content .row .about-us__left .left__top {
     font-size: 0.9em;
     margin-bottom: 10px;
   }
-
   .tabula-about-us .about-us__content .row .about-us__right {
     width: 80%;
   }
 }
-
 @media screen and (max-width: 576px) {
   .tabula-about-us .about-us__content .row .about-us__right {
     width: 90%;
   }
 }
-
 @media screen and (max-width: 412px) {
   .tabula-about-us .about-us__content .row .about-us__left .left__bottom {
     margin-top: 10px;
@@ -318,7 +273,6 @@ img {
     font-weight: 700;
   }
 }
-
 @media screen and (max-width: 394px) {
   .tabula-about-us .about-us__content .row .about-us__left .left__bottom {
     color: #181818;
@@ -326,13 +280,11 @@ img {
     font-weight: 700;
   }
 }
-
 .tabula-staff-list {
   position: relative;
   background-color: rgb(220, 209, 243);
   padding-top: 35px;
 }
-
 .tabula-staff-list::before {
   content: "";
   background-color: rgb(220, 209, 243);
@@ -346,32 +298,26 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .tabula-staff-list .staff-list__content {
   max-width: 1234px;
   text-align: center;
   padding: 0 30px;
 }
-
 .tabula-staff-list .staff-list__content span {
   display: block;
 }
-
 .tabula-staff-list .staff-list__content .card {
   height: 430px;
   margin-bottom: 2em;
   overflow: hidden;
   transition: all 0.5s;
 }
-
 .tabula-staff-list .staff-list__content .card .card-img-top {
   transition: all 1.25s;
 }
-
 .tabula-staff-list .staff-list__content .card .card-img-top:hover {
   transform: scale(1.05);
 }
-
 .tabula-staff-list .staff-list__content .card .card-body .teacher__country {
   margin-top: 1em;
   text-transform: uppercase;
@@ -379,18 +325,15 @@ img {
   font-size: 0.75rem;
   font-weight: 700;
 }
-
 .tabula-staff-list .staff-list__content .card .card-body .teacher__name {
   margin: 8px 0;
   color: #181818;
   font-size: 1.55rem;
   font-weight: 700;
 }
-
 .tabula-staff-list .staff-list__content .card .card-body .teacher__desc {
   line-height: 30px;
 }
-
 .tabula-staff-list .staff-list__content .card:hover {
   box-shadow: 1px 24px 30px -13px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 1px 24px 30px -13px rgba(0, 0, 0, 0.35);
@@ -406,7 +349,6 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
 .tabula-contact .contact__content {
   padding: 0 30px;
   max-width: 995px;
@@ -414,22 +356,18 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-
 .tabula-contact .contact__content .content__left {
   margin-right: 50px;
 }
-
 .tabula-contact .contact__content .content__right {
   max-width: 365px;
 }
-
 .tabula-contact .contact__content .content__right .card {
   border: none;
   box-shadow: -1px 8px 14px 0px rgba(0, 0, 0, 0.24);
   -webkit-box-shadow: -1px 8px 14px 0px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: -1px 8px 14px 0px rgba(0, 0, 0, 0.24);
 }
-
 .tabula-contact .contact__content .content__right .card .card__title {
   text-align: center;
   margin-bottom: 1em;
@@ -437,24 +375,20 @@ img {
   font-size: 2.25rem;
   font-weight: 700;
 }
-
 .tabula-contact .contact__content .content__right .card .card__form .form__input {
   position: relative;
   font-size: 0.9em;
 }
-
 .tabula-contact .contact__content .content__right .card .card__form .form__input .form-control {
   font-size: 0.9em;
   border-radius: 30px;
   margin-bottom: 1em;
   padding-left: 50px;
 }
-
 .tabula-contact .contact__content .content__right .card .card__form .form__input .form__textarea {
   border-radius: 20px;
   margin-bottom: 40px;
 }
-
 .tabula-contact .contact__content .content__right .card .card__form .form__input i {
   position: absolute;
   color: #b61984;
@@ -462,15 +396,12 @@ img {
   top: 8px;
   left: 25px;
 }
-
 .tabula-contact .contact__content .content__right .card .card__form .row .form-control {
   padding: 20px 50px;
 }
-
 .tabula-contact .contact__content .content__right .card .card__form .row i {
   top: 12px;
 }
-
 .tabula-contact .contact__content .content__right .card .card__btn button {
   text-transform: uppercase;
   font-size: 0.8em;
@@ -483,7 +414,6 @@ img {
   border-radius: 30px;
   padding: 10px 50px;
 }
-
 .tabula-contact .contact__content .content__right .card .card__btn button:hover {
   background: #fff;
   border-color: #b61984;
@@ -494,39 +424,32 @@ img {
   .tabula-contact {
     padding: 0;
   }
-
   .tabula-contact .contact__content {
     flex-direction: column;
     align-items: normal;
   }
-
   .tabula-contact .contact__content .content__left {
     max-width: 65%;
     margin-bottom: 50px;
   }
-
   .tabula-contact .contact__content .content__right {
     max-width: 100%;
   }
-
   .tabula-contact .contact__content .content__right .card .card__title {
     text-align: left;
     font-size: 2rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .tabula-contact .contact__content .content__left {
     max-width: 80%;
   }
 }
-
 @media screen and (max-width: 576px) {
   .tabula-contact .contact__content .content__left {
     max-width: 90%;
   }
 }
-
 .tabula-footer {
   padding: 140px 0;
   background: url("../assets/img/footer_background.jpg");
@@ -534,7 +457,6 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .tabula-footer .footer__content {
   font-size: 0.9em;
   color: #fff;
@@ -544,51 +466,41 @@ img {
   grid-template-columns: repeat(4, 2fr);
   gap: 55px;
 }
-
 .tabula-footer .footer__content a {
   color: #fff;
 }
-
 .tabula-footer .footer__content .content__group .group__title {
   display: block;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1em;
 }
-
 .tabula-footer .footer__content .content__group .group__desc li {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
 }
-
 .tabula-footer .footer__content .content__group .group__desc li i {
   margin-right: 1em;
 }
-
 .tabula-footer .footer__content .content__group .group__socials {
   margin-top: 2em;
 }
-
 .tabula-footer .footer__content .content__group .group__socials a {
   margin-right: 1em;
   transition: all 0.5s;
 }
-
 .tabula-footer .footer__content .content__group .group__socials a:hover {
   color: #181818;
 }
-
 .tabula-footer .footer__content .content__group .group__links li {
   margin-bottom: 25px;
   position: relative;
   transition: all 0.5s;
 }
-
 .tabula-footer .footer__content .content__group .group__links li:hover {
   opacity: 0.8;
 }
-
 .tabula-footer .footer__content .content__group .group__links li::after {
   content: "";
   position: absolute;
@@ -600,7 +512,6 @@ img {
   height: 0.55px;
   opacity: 0.18;
 }
-
 .tabula-footer .footer__content .content__group .group__subs .sub__input input {
   background: transparent;
   border: 1px solid transparent;
@@ -617,16 +528,13 @@ img {
   -webkit-box-shadow: -1px 4px 5px 0px rgba(120, 79, 79, 0.35);
   -moz-box-shadow: -1px 4px 5px 0px rgba(120, 79, 79, 0.35);
 }
-
 .tabula-footer .footer__content .content__group .group__subs .sub__input input::placeholder {
   color: #fff;
 }
-
 .tabula-footer .footer__content .content__group .group__subs .sub__input input:focus {
   color: #fff;
   border: 0.5px solid #fff;
 }
-
 .tabula-footer .footer__content .content__group .group__subs button {
   color: #b61984;
   text-transform: uppercase;
@@ -639,7 +547,6 @@ img {
   padding: 13px 50px;
   transition: all 0.5s;
 }
-
 .tabula-footer .footer__content .content__group .group__subs button:hover {
   background: #b61984;
   border-color: 30px;
@@ -650,17 +557,13 @@ img {
   .tabula-footer {
     padding-bottom: 200px;
   }
-
   .tabula-footer .footer__content {
     font-size: 0.75rem;
     grid-template-columns: repeat(2, 2.5fr);
   }
 }
-
 @media screen and (max-width: 415px) {
   .tabula-footer .footer__content {
     grid-template-columns: repeat(1, 2.5fr);
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
