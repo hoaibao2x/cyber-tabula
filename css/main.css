@@ -405,7 +405,7 @@ img {
   color: red;
 }
 .tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select option {
-  padding-left: 20px;
+  margin-left: 60px;
 }
 .tabula-contact .contact__content .content__right .card .card__form .row .form-control {
   padding: 20px 50px;
