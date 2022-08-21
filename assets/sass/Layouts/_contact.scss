@@ -54,7 +54,10 @@
                             left: 25px;
                         }
                         #tabula-select {
-                            color: red;
+                            font-size: $fs-3;
+                            border-radius: $bd-radius-1;
+                            margin-bottom: $mg-2;
+                            padding-left: $pd-6;
                         }
                     }
                     .row {
@@ -116,9 +119,7 @@
 
 @include responsive("medium") {
     .tabula-contact {
-
         .contact__content {
-
             .content__left {
                 max-width: 80%;
             }
@@ -128,9 +129,7 @@
 
 @include responsive("small") {
     .tabula-contact {
-
         .contact__content {
-
             .content__left {
                 max-width: 90%;
             }
