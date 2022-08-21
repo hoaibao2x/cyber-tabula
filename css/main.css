@@ -399,9 +399,9 @@ img {
   top: 8px;
   left: 25px;
 }
-.tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select option {
-  border-radius: 0px;
-  padding-left: 50px;
+.tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select {
+  border: none;
+  color: red;
 }
 .tabula-contact .contact__content .content__right .card .card__form .row .form-control {
   padding: 20px 50px;
