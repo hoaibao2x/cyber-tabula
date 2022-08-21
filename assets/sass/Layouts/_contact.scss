@@ -1,0 +1,136 @@
+.tabula-contact {
+    position: relative;
+    padding: $pd-1 0;
+    margin-top: $mg-11;
+
+    background: url("../assets/img/accent_bottom_wave_01.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    .contact__content {
+        padding: 0 $pd-15;
+        max-width: 995px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content__left {
+            margin-right: 50px;
+        }
+
+        .content__right {
+            max-width: 365px;
+            .card {
+                border: none;
+                box-shadow: -1px 8px 14px 0px rgba(0, 0, 0, 0.24);
+                -webkit-box-shadow: -1px 8px 14px 0px rgba(0, 0, 0, 0.24);
+                -moz-box-shadow: -1px 8px 14px 0px rgba(0, 0, 0, 0.24);
+                .card__title {
+                    text-align: center;
+                    margin-bottom: $mg-2;
+                    @include textStyle($color-dark-gray, $fs-10, $fw-3);
+                }
+
+                .card__form {
+                    .form__input {
+                        position: relative;
+                        font-size: $fs-3;
+                        .form-control {
+                            font-size: $fs-3;
+                            border-radius: $bd-radius-1;
+                            margin-bottom: $mg-2;
+                            padding-left: $pd-6;
+                        }
+                        .form__textarea {
+                            border-radius: $bd-radius-2;
+                            margin-bottom: $mg-5;
+                        }
+                        i {
+                            position: absolute;
+                            color: $color-strong-pink;
+                            z-index: 1;
+                            top: 8px;
+                            left: 25px;
+                        }
+                    }
+                    .row {
+                        .form-control {
+                            padding: $pd-4 $pd-6;
+                        }
+                        i {
+                            top: 12px;
+                        }
+                    }
+                }
+
+                .card__btn {
+                    button {
+                        text-transform: uppercase;
+                        font-size: $fs-2;
+                        font-weight: $fw-3;
+                        color: $color-white;
+                        margin-bottom: $mg-6;
+                        transition: all 0.5s;
+                        @include btnStyle($color-strong-pink, $bd-1 solid, $bd-radius-1, $pd-7, $pd-6);
+
+                        &:hover {
+                            @include btnHover($color-white, $color-strong-pink, $color-strong-pink);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Resp
+@include responsive("large") {
+    .tabula-contact {
+        padding: 0;
+        .contact__content {
+            flex-direction: column;
+            align-items: normal;
+
+            .content__left {
+                max-width: 65%;
+                margin-bottom: $mg-6;
+            }
+
+            .content__right {
+                max-width: 100%;
+
+                .card {
+                    .card__title {
+                        text-align: left;
+                        font-size: $fs-14;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("medium") {
+    .tabula-contact {
+
+        .contact__content {
+
+            .content__left {
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+@include responsive("small") {
+    .tabula-contact {
+
+        .contact__content {
+
+            .content__left {
+                max-width: 90%;
+            }
+        }
+    }
+}

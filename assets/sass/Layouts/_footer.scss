@@ -1,0 +1,129 @@
+.tabula-footer {
+    padding: 140px 0;
+    background: url("../assets/img/footer_background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .footer__content {
+        font-size: $fs-3;
+        color: $color-white;
+        padding: 0 $pd-15;
+        max-width: 1234px;
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        gap: 55px;
+        a {
+            color: $color-white;
+        }
+        .content__group {
+            .group__title {
+                display: block;
+                font-size: $fs-11;
+                font-weight: $fw-3;
+                margin-bottom: $mg-2;
+            }
+            .group__desc {
+                li {
+                    margin-bottom: $mg-9;
+                    display: flex;
+                    align-items: center;
+                    i {
+                        margin-right: $mg-2;
+                    }
+                }
+            }
+            .group__socials {
+                margin-top: $mg-3;
+                a {
+                    margin-right: $mg-2;
+                    transition: all 0.5s;
+                    &:hover {
+                        color: $color-dark-gray;
+                    }
+                }
+            }
+            .group__links {
+                li {
+                    margin-bottom: $mg-10;
+                    position: relative;
+                    transition: all 0.5s;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        bottom: -10px;
+                        left: 0;
+                        background-color: $color-dark-gray;
+                        width: 65px;
+                        height: 0.55px;
+                        opacity: 0.18;
+                    }
+                }
+            }
+            .group__subs {
+                .sub__input {
+                    input {
+                        &::placeholder {
+                            color: $color-white;
+                        }
+
+                        @include btnStyle($color-none, $bd-1 solid $color-none, $bd-radius-1, $pd-13, $pd-6);
+
+                        color: $color-white;
+                        font-size: $fs-3;
+                        padding: $pd-12 0;
+                        text-align: center;
+                        margin-bottom: $mg-8;
+                        box-shadow: none;
+                        transition: all 0.5s;
+                        box-shadow: -1px 4px 5px 0px rgba(120, 79, 79, 0.35);
+                        -webkit-box-shadow: -1px 4px 5px 0px rgba(120, 79, 79, 0.35);
+                        -moz-box-shadow: -1px 4px 5px 0px rgba(120, 79, 79, 0.35);
+
+                        &:focus {
+                            color: $color-white;
+                            border: 0.5px solid $color-white;
+                        }
+                    }
+                }
+                button {
+                    color: $color-strong-pink;
+                    text-transform: uppercase;
+                    font-size: $fs-3;
+                    font-weight: $fw-4;
+                    width: 100%;
+
+                    @include btnStyle($color-white, $bd-1 solid, $bd-radius-1, $pd-13, $pd-6);
+
+                    transition: all 0.5s;
+                    &:hover {
+                        @include btnHover($color-strong-pink, $bd-radius-1, $color-white);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Res
+@include responsive("large") {
+    .tabula-footer {
+        padding-bottom: 200px;
+
+        .footer__content {
+            font-size: $fs-1;
+            grid-template-columns: repeat(2, 2.5fr);
+        }
+    }
+}
+
+@include responsive("smaller") {
+    .tabula-footer {
+        .footer__content {
+            grid-template-columns: repeat(1, 2.5fr);
+        }
+    }
+}

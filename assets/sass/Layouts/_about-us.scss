@@ -1,20 +1,201 @@
-.about-us__content {
-    max-width: 1234px;
-    .row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        span {
-            display: block;
-        }
-        .about-us__left {
-            .left__top {
-                margin-bottom: $mg-8;
-                @include textStyle($color-strong-pink, $fs-5, $fw-4);
+.tabula-about-us {
+    position: relative;
+    background: url("../assets/img/Violet_top_left_wave.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        background-image: url("../assets/img/yellow_top_wave_01.png");
+        background-size: cover;
+        display: block;
+        width: 100%;
+        height: 220px;
+    }
+    .about-us__content {
+        max-width: 1234px;
+        margin-top: -150px;
+        padding: 0 $pd-15;
+        padding-bottom: $pd-6;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                display: block;
             }
-            .left__bottom {
-                line-height: $lh-1;
-                @include textStyle($color-dark-gray, $fs-9, $fw-3);
+            .about-us__left {
+                .left__top {
+                    margin-bottom: $mg-8;
+                    @include textStyle($color-strong-pink, $fs-5, $fw-4);
+                }
+                .left__bottom {
+                    line-height: $lh-1;
+                    @include textStyle($color-dark-gray, $fs-9, $fw-3);
+                }
+            }
+        }
+    }
+}
+
+// Resp
+@include responsive("medium-large") {
+    .tabula-about-us {
+        &::before {
+            height: 180px;
+        }
+        .about-us__content {
+            .row {
+                margin-top: $mg-11;
+                .about-us__left {
+                    .left__top {
+                        margin-bottom: $mg-9;
+                    }
+                    .left__bottom {
+                        line-height: $lh-3;
+                        @include textStyle($color-dark-gray, $fs-12, $fw-3);
+                    }
+                }
+                .about-us__right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("large") {
+    .tabula-about-us {
+        &::before {
+            height: 180px;
+        }
+        .about-us__content {
+            .row {
+                .about-us__left {
+                    margin-top: $mg-11;
+                    .left__top {
+                        margin-bottom: $mg-7;
+                    }
+                    .left__bottom {
+                        @include textStyle($color-dark-gray, $fs-7, $fw-3);
+                    }
+                }
+                .about-us__right {
+                    width: 600px;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("normal-large-3") {
+    .tabula-about-us {
+        .about-us__content {
+            .row {
+                .about-us__left {
+                    .left__bottom {
+                        margin-top: $mg-10;
+                        font-size: $fs-13;
+                    }
+                }
+                .about-us__right {
+                    margin-top: $mg-5;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("normal-large-2") {
+    .tabula-about-us {
+        .about-us__content {
+            .row {
+                .about-us__left {
+                    .left__bottom {
+                        margin-top: $mg-10;
+                        font-size: $fs-8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("normal-large") {
+    .tabula-about-us {
+        .about-us__content {
+            .row {
+                .about-us__left {
+                    .left__bottom {
+                        @include textStyle($color-dark-gray, $fs-13, $fw-3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("medium") {
+    .tabula-about-us {
+        &::before {
+            height: 180px;
+        }
+        .about-us__content {
+            .row {
+                .about-us__left {
+                    margin-top: $mg-11;
+                    margin-bottom: $mg-5;
+                    .left__top {
+                        font-size: $fs-3;
+                        margin-bottom: $mg-8;
+                    }
+                }
+                .about-us__right {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("small") {
+    .tabula-about-us {
+        .about-us__content {
+            .row {
+                .about-us__right {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive("smaller-2") {
+    .tabula-about-us {
+        .about-us__content {
+            .row {
+                .about-us__left {
+                    .left__bottom {
+                        margin-top: $mg-8;
+                        @include textStyle($color-dark-gray, $fs-12, $fw-3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive("smaller-1") {
+    .tabula-about-us {
+        .about-us__content {
+            .row {
+                .about-us__left {
+                    .left__bottom {
+                        @include textStyle($color-dark-gray, $fs-13, $fw-3);
+                    }
+                }
             }
         }
     }

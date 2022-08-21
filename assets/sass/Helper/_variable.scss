@@ -8,6 +8,12 @@ $fs-6: 1.55rem;
 $fs-7: 2.5rem;
 $fs-8: 3.5rem;
 $fs-9: 3.8rem;
+$fs-10: 2.25rem;
+$fs-11: 1.5rem;
+$fs-12: 2.8rem;
+$fs-13: 3.15rem;
+$fs-14: 2rem;
+$fs-15: 4rem;
 
 // Font ưeight
 $fw-1: 300;
@@ -19,6 +25,8 @@ $fw-4: 500;
 $color-dark-gray: #181818;
 $color-white: #fff;
 $color-strong-pink: #b61984;
+$color-light-grayish-violet: rgb(220, 209, 240);
+$color-none: transparent;
 
 // Margin
 $mg-1: .05em;
@@ -29,6 +37,9 @@ $mg-5: 40px;
 $mg-6: 50px;
 $mg-7: -15px;
 $mg-8: 10px;
+$mg-9: 8px;
+$mg-10: 25px;
+$mg-11: 80px;
 
 // Padding
 $pd-1: 2em;
@@ -40,12 +51,38 @@ $pd-6: 50px;
 $pd-7: 10px;
 $pd-8: 5px;
 $pd-9: 1px;
+$pd-10: 35px;
+$pd-11: 5em;
+$pd-12: 22px;
+$pd-13: 13px;
+$pd-14: 100px;
+$pd-15: 30px;
 
 // Border 
 $bd-1: 1px;
+$bd-2: 0.25px;
 
 // Border radius
 $bd-radius-1: 30px;
+$bd-radius-2: 20px;
 
 // Line height
 $lh-1: 4.5rem;
+$lh-2: 30px;
+$lh-3: 3.5rem;
+
+// Responsive
+$breakpoints: (
+    "extra-large": 1200px,
+    "more-large": 1199px,
+    "medium-large": 1024px,
+    "large": 992px,
+    "normal-large-3": 913px,
+    "normal-large-2": 881px,
+    "normal-large": 817px,
+    "medium": 768px,
+    "small": 576px,
+    "smaller": 415px,
+    "smaller-2": 412px,
+    "smaller-1": 394px
+);
