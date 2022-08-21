@@ -400,11 +400,22 @@ img {
   left: 25px;
 }
 .tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select {
+  position: relative;
   border-radius: 15px;
   -webkit-appearance: none;
 }
 .tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select option {
   -webkit-appearance: none;
+}
+.tabula-contact .contact__content .content__right .card .card__form .form__input .tabula-expand-icon {
+  position: absolute;
+  font-size: 1.1rem;
+  right: 10px;
+  top: 18%;
+  transform: rotate(0);
+}
+.tabula-contact .contact__content .content__right .card .card__form .form__input .tabula-expand-icon:hover {
+  cursor: pointer;
 }
 .tabula-contact .contact__content .content__right .card .card__form .row .form-control {
   padding: 20px 50px;

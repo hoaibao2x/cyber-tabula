@@ -54,10 +54,22 @@
                             left: 25px;
                         }
                         #tabula-select {
+                            position: relative;
                             border-radius: 15px;
                             -webkit-appearance: none;
                             option {
                                 -webkit-appearance: none;
+                            }
+                        }
+
+                        .tabula-expand-icon {
+                            position: absolute;
+                            font-size: $fs-5;
+                            right: 10px;
+                            top: 18%;
+                            transform: rotate(0);
+                            &:hover {
+                                cursor: pointer;
                             }
                         }
                     }
