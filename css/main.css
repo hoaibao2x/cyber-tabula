@@ -382,6 +382,12 @@ img {
   position: relative;
   font-size: 0.9em;
 }
+.tabula-contact .contact__content .content__right .card .card__form .form__input .form-control {
+  font-size: 0.9em;
+  border-radius: 30px;
+  margin-bottom: 1em;
+  padding-left: 50px;
+}
 .tabula-contact .contact__content .content__right .card .card__form .form__input .form__textarea {
   border-radius: 20px;
   margin-bottom: 40px;
@@ -392,6 +398,10 @@ img {
   z-index: 1;
   top: 8px;
   left: 25px;
+}
+.tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select option {
+  border-radius: 0px;
+  padding-left: 50px;
 }
 .tabula-contact .contact__content .content__right .card .card__form .row .form-control {
   padding: 20px 50px;
