@@ -54,11 +54,11 @@
                             left: 25px;
                         }
                         #tabula-select {
-                            border: 1px solid green;
+                            padding-left: 80px;
+                            border: 1px solid $color-light-grayish-violet;
                             border-radius: 15px;
-                            color: red;
                             option {
-                                margin-left: 60px;
+                                // margin-left: 60px;
                             }
                         }
                     }
