@@ -36,15 +36,17 @@
                     .form__input {
                         position: relative;
                         font-size: $fs-3;
-                        .form-control {
+                        .tabula-form-control {
                             font-size: $fs-3;
                             border-radius: $bd-radius-1;
                             margin-bottom: $mg-2;
-                            padding-left: $pd-6;
                         }
                         .form__textarea {
                             border-radius: $bd-radius-2;
                             margin-bottom: $mg-5;
+                            &::placeholder {
+                                padding-left: $pd-5;
+                            }
                         }
                         i {
                             position: absolute;
@@ -54,10 +56,14 @@
                             left: 25px;
                         }
                         #tabula-select {
-                            text-indent: 30px;
-                            // padding-left: 80px;
-                            border: 1px solid $color-light-grayish-violet;
+                            position: relative;
                             border-radius: 15px;
+                            option {
+                                position: absolute;
+                                top: -200px;
+                                left: 30px;
+                                display: inline-block;
+                            }
                         }
                     }
                     .row {

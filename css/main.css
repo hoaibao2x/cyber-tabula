@@ -382,15 +382,17 @@ img {
   position: relative;
   font-size: 0.9em;
 }
-.tabula-contact .contact__content .content__right .card .card__form .form__input .form-control {
+.tabula-contact .contact__content .content__right .card .card__form .form__input .tabula-form-control {
   font-size: 0.9em;
   border-radius: 30px;
   margin-bottom: 1em;
-  padding-left: 50px;
 }
 .tabula-contact .contact__content .content__right .card .card__form .form__input .form__textarea {
   border-radius: 20px;
   margin-bottom: 40px;
+}
+.tabula-contact .contact__content .content__right .card .card__form .form__input .form__textarea::placeholder {
+  padding-left: 40px;
 }
 .tabula-contact .contact__content .content__right .card .card__form .form__input i {
   position: absolute;
@@ -400,9 +402,14 @@ img {
   left: 25px;
 }
 .tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select {
-  text-indent: 30px;
-  border: 1px solid rgb(220, 209, 240);
+  position: relative;
   border-radius: 15px;
+}
+.tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select option {
+  position: absolute;
+  top: -200px;
+  left: 30px;
+  display: inline-block;
 }
 .tabula-contact .contact__content .content__right .card .card__form .row .form-control {
   padding: 20px 50px;
