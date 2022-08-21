@@ -54,12 +54,10 @@
                             left: 25px;
                         }
                         #tabula-select {
-                            padding-left: 80px;
+                            text-indent: 30px;
+                            // padding-left: 80px;
                             border: 1px solid $color-light-grayish-violet;
                             border-radius: 15px;
-                            option {
-                                // margin-left: 60px;
-                            }
                         }
                     }
                     .row {
