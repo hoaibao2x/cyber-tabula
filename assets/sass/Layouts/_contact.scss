@@ -36,17 +36,18 @@
                     .form__input {
                         position: relative;
                         font-size: $fs-3;
-                        .tabula-form-control {
+                        .form-control {
                             font-size: $fs-3;
                             border-radius: $bd-radius-1;
                             margin-bottom: $mg-2;
+                            padding-left: $pd-6;
                         }
                         .form__textarea {
                             border-radius: $bd-radius-2;
                             margin-bottom: $mg-5;
-                            &::placeholder {
-                                padding-left: $pd-5;
-                            }
+                            // &::placeholder {
+                            //     padding-left: $pd-5;
+                            // }
                         }
                         i {
                             position: absolute;
@@ -55,16 +56,16 @@
                             top: 8px;
                             left: 25px;
                         }
-                        #tabula-select {
-                            position: relative;
-                            border-radius: 15px;
-                            option {
-                                position: absolute;
-                                top: -200px;
-                                left: 30px;
-                                display: inline-block;
-                            }
-                        }
+                        // #tabula-select {
+                        //     position: relative;
+                        //     border-radius: 15px;
+                        //     option {
+                        //         position: absolute;
+                        //         top: -200px;
+                        //         left: 30px;
+                        //         display: inline-block;
+                        //     }
+                        // }
                     }
                     .row {
                         .form-control {
