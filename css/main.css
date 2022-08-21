@@ -396,7 +396,7 @@ img {
   top: 8px;
   left: 25px;
 }
-.tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select {
+.tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select option {
   font-size: 0.9em;
   border-radius: 30px;
   margin-bottom: 1em;
