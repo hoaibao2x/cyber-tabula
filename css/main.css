@@ -402,6 +402,9 @@ img {
 .tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select {
   border-radius: 15px;
 }
+.tabula-contact .contact__content .content__right .card .card__form .form__input #tabula-select option {
+  -webkit-appearance: none;
+}
 .tabula-contact .contact__content .content__right .card .card__form .row .form-control {
   padding: 20px 50px;
 }

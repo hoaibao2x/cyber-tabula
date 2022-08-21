@@ -55,6 +55,9 @@
                         }
                         #tabula-select {
                             border-radius: 15px;
+                            option {
+                                -webkit-appearance: none;
+                            }
                         }
                     }
                     .row {
